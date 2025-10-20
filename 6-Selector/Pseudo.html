@@ -1,0 +1,55 @@
+<html>
+<head>
+    <style>
+        /* Style the first paragraph inside of the container */
+        .container p:first-child{
+            color: red;
+            font-weight: bold;
+        }
+        /* Style when the input is focused */
+        input:focus{
+            border: 2px solid rgb(18, 187, 18);
+            /* By default browser shows an orange line oround the element, outline removes this default line and set our costume border style and color.  */
+            outline: none;
+        }
+        /* style when hovering over the button */
+        button:hover{
+            background-color: rgb(117, 117, 222);
+            cursor: pointer;
+        }
+        /* Style when the button is being clicked  */
+        button:active{
+            background-color: blueviolet;
+            color: white;
+        }
+        /* Style the unvisited link */
+        a:link{
+            color: black;
+        }
+        /* Style the Visited Link */
+        a:visited{
+            color: blueviolet;
+        }
+        /* Style the part of the elemet */
+        p::first-letter{
+            font-size: 30px;
+            color: blue;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+<h5>This is an Example of Pseudo Selector in CSS</h5>
+<div class="container">
+    <p>this is first Paragraph</p>
+    <p>this is Second Paragraph</p>
+</div>
+<input type="text" placeholder="Type your name"><br><br>
+<button>Hover or click me</button><br><br>
+<a href="http://saifi-coding-academy.com" target="_blank"> Visit color example</a>
+
+</body>
+</html>

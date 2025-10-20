@@ -1,0 +1,71 @@
+*{
+    box-sizing:  border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, rgb(238, 233, 233), rgb(136, 136, 221));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* ID Selector */
+#card{
+    background-color: rgb(212, 209, 209);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px black;
+    width: 350px;
+    text-align: center;
+}
+/* combinator Selector */
+#card ul li{
+    list-style: none;
+}
+
+.name{
+    color: rgb(72, 70, 70);
+    margin-bottom: 1rem;
+}
+
+.title{
+    color: rgb(70, 69, 69);
+    font-size: 1rem;
+}
+
+.name, .title{
+    font-weight: bold;
+}
+
+#card > ul{
+    padding: 0rem;
+    margin-bottom: 1rem;
+}
+
+ul + .note{
+    color: rgb(85, 82, 82);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.title ~ .socials .link{
+    color: rgb(55, 55, 165);
+    margin: 0.3rem 0rem;
+    display: block;
+}
+
+/* class selector */
+.btn{
+    background-color: #6bc0ee;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
