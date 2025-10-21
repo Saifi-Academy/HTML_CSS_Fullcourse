@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        h1{
+            text-align: center;
+            color: blue;
+            font-size: 50px;
+
+        }
+
+        .box{
+            color: red;
+            background-color: aquamarine;
+            border: 5px solid green;
+            width: 300px;
+            height: 400px;
+            display: none;
+        }
+
+        @media only screen and (max-width:500px){
+            #bx1{
+                display: block;
+                background-color: blue;
+                text-align: center;
+                color: white;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:700px){
+            #bx2{
+                display: block;
+                background-color: red;
+
+            }
+        }
+        @media (min-width:700px) and (max-width:1000px){
+            #bx3{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        @media (min-width:1000px){
+            #bx4{
+                display: block;
+                background-color: rgb(218, 37, 145);
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Hello Responsive</h1>
+    <div class="box" id="bx1">This is Mobile Screen</div>
+    <div class="box" id="bx2">This is Tablet Screen</div>
+    <div class="box" id="bx3">This is Laptop Screen</div>
+    <div class="box" id="bx4">This is Large Screen</div>
 </body>
 </html>
