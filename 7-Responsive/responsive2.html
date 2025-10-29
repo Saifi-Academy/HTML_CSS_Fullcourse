@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content1, .content2, .content3{
+            border: 2px solid;
+        }
+        body{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            gap: 10px;
+            color: red;
+            font-weight: 17px;
+        }
+        .container>div{
+        flex: 100%;
+        }
+        .subcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        }
+        .header{
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        min-height: 10px;
+        background: #000;
+        border-radius: 3px;
+        }
+
+        .menu{
+        flex: 1;
+        background: green;
+        align-items: center;
+    }
+
+    .main_container{
+        flex: 4;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .main_container>div{
+        flex: 100%;
+    }
+    h3{
+        padding: 10px;
+    }
+    .main{
+        min-height: 300px;
+        background: yellow;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+    .content1, .content2, .content3{
+        min-height: 100px;
+        background: rgb(202, 26, 26);
+        flex: 1;
+    }
+    .footer{
+        flex: 100%;
+        min-height: 50px;
+        background: pink;
+    }
+    .menu, .main, .content>div{
+        display: flex;
+        justify-content: center;
+        border-radius: 3px;
+    }
+    @media only screen and (max-width: 768px){
+        .subcontainer{
+            flex-direction: column;
+        }
+        .sidebar{
+            min-height: 40px;
+        }
+
+    }
+
+    @media only screen and (max-width:550px){
+        .content>div{
+            flex:100%;
+        }
+        .content1, .content2, .content3{
+            min-height: 150px;
+        }
+    }
+    img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* optional: keeps aspect ratio while filling container */
+    border-radius: 3px; /* matches your layout style */
+}
+    .content img {
+    padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h3>Header</h3></div>
+        <div class="subcontainer">
+            <div class="menu"><h3>Menu</h3></div>
+            <div class="main_container">
+                <div class="main"><img src="imgg.png" width="495px" height="100px" alt=""></div>
+
+                <div class="content">
+                    <div class="content1"><img src="imgg.png"  alt=""></div>
+                    <div class="content2"><img src="imgg.png"  alt=""></div>
+                    <div class="content3"><img src="imgg.png"  alt=""></div>
+                    <div class="footer"><h3>footer</h3></div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
